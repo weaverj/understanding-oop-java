@@ -35,6 +35,6 @@ Once this is all setup, you should be abble to go to a command prompt, as shown 
 
 You will need git on your client box to clone this repository.  You can confirm you have git already (most machines will) by tryng the "git --version" commmand.  If you don't seem to have git installed, follow the directions here: [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-Click the green "Code" button on the main page of this repository to get the command to clone the main branch to your machine.
+Click the green "Code" button on the main page of this repository to get the command to clone the main branch to your machine.  If you're having trouble, check the documentation here:  [Cloning a github repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 
 ## Say hello to OOP!
