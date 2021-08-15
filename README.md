@@ -1,10 +1,6 @@
 # Level Up with Object Oriented Programming in Java!
 
-This repository contains the exercises and demos we'll work through as part of this course!
-
-**This repository should be complete and ready at least 3 weeks before class start!  It's still in progress at the moment!**
-
-Here's what you should do before the course starts (if you plan to follow along with the exercises only):
+This repository contains the exercises and demos we'll work through as part of this course!   If taking the course, you dont need to clone this repository ahead of time, as we will work through the demonstration portions together.  But if you'd like to try some of the exercises out youself after the course, feel free to clone this repo and have at it!
 
 ## Get Java working
 
@@ -37,4 +33,19 @@ You will need git on your client box to clone this repository.  You can confirm 
 
 Click the green "Code" button on the main page of this repository to get the command to clone the main branch to your machine.  If you're having trouble, check the documentation here:  [Cloning a github repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 
-## Say hello to OOP!
+## Compile and run the application
+
+The easiest way to run this application, modify it, and rerun with your changes, is to import it into a Java IDE like IntelliJ or Eclipse.
+
+The starting point to run the application is in src/ui/App.  This is the class to run.
+
+If you would like to compile and run it from the command line, step down into the root directory (the src directory) and try:
+
+```
+javac -d out ui/App.java
+```
+That should compile all of the class files and put them into an "out" subdirectory from the root.  To run, step down into that out directory and try: 
+
+```
+java -cp . ui.App
+```
