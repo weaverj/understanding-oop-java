@@ -7,7 +7,7 @@ import services.InMemoryProviderSource;
 import java.util.Scanner;
 
 // Responsible for interacting with the user / prescriber.
-public class UserInterface {
+public class ClinicUI {
 
     private final Scanner scanner = new Scanner(System.in);
     private RxWriterSession session = null;

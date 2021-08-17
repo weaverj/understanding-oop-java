@@ -13,8 +13,13 @@ public class CsvFileProviderSource {
         return readProvidersFromFile();
     }
 
+    public Provider getProviderByName(String name) {
+        List<Provider> allProviders = readProvidersFromFile();
+        return allProviders.stream().filter(p -> p.getName().equalsIgnoreCase(name)).findFirst().orElse(null);
+    }
+
     private static List<Provider> readProvidersFromFile() {
-        ArrayList<Provider> providers = new ArrayList<>();
+        ArrayList<Provider> providers = new  ArrayList<>();
         InputStream stream = CsvFileProviderSource.class.getResourceAsStream("providers.csv");
         String line;
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(stream))) {

@@ -15,6 +15,7 @@ public class InMemoryProviderSource {
       of a given one of these providers - with the same object ID - all the time.
      */
     static {
+        System.out.println("Static block executing...");
         inMemoryProviders = new ArrayList<>();
         inMemoryProviders.add(new Provider("Bill Blue", Credentials.MD));
         inMemoryProviders.add(new Provider("Carol Cyan", Credentials.MD));
